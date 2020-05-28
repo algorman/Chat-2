@@ -6,5 +6,39 @@
   	border-radius: 4px;
   	background-color: #f8f8f8;
   	resize: none;
+  	font-family:"Times New Roman", Times, serif;  
+   	font-size: 20px;
+
+}
+
+body{
+	background-color: Lavender;
+	text-align: center;
+}
+
+#Messages{
+	text-align: left;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+  	width: 50%;
+}
+
+#sendMessage{
+	background-color: Pink;
+	font-size: 16px;
+	padding: 12px 28px;
+	color: black;
+	border:2px solid Azure;
+	border-radius: 20px;
+}
+
+#logo{
+	font-family:"Times New Roman", Times, serif;  
+ 	color: SlateGray;
+ 	font-style: italic;
 
 }
