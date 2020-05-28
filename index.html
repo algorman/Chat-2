@@ -2,19 +2,19 @@
 <html>
 <head>
 <title>Chat</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/x-icon" href="icon.png">
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js" defer></script>
+<script type="text/javascript" src="https://lminsky.github.io/Web-Development/chat/fb.js" defer></script>
+<script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
 
-	<button id="sendMessage">Press Me</button>
-	<input type="text" id="Input">
-	<div id="Messages"></div>
+<textarea placeholder="Input Message Here" rows="5" required="Write something here" id="Input"></textarea>
+<button id="sendMessage">Press To Send</button>
+<div id="Messages"></div>
 
 </body>
-	<script type="text/javascript" src="script.js" defer></script>
-	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js" defer></script>
-	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js" defer></script>
-	<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js" defer></script>
-	<script type="text/javascript" src="https://lminsky.github.io/Web-Development/chat/fb.js" defer></script>
 </html>

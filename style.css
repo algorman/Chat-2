@@ -1,1 +1,10 @@
+#Input{
+	width: 50%;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+  	border: 2px solid Navy;
+  	border-radius: 4px;
+  	background-color: #f8f8f8;
+  	resize: none;
 
+}
