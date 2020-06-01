@@ -7,6 +7,7 @@ console.log(user);
 document.getElementById("sendMessage").addEventListener("click", send);
 }
 
+
 //This function runs every time you recieve a message. It will run for every message already in the database.
 //The message information is passed to you in the variable 'message'
 function recieveMessage(message) {
