@@ -12,46 +12,46 @@ document.getElementById("sendMessage").addEventListener("click", send);
 //The message information is passed to you in the variable 'message'
 function recieveMessage(message) {
 console.log(message);
-// let messages = [
-//   { Name: "message.name", Message: "message.content"},
-// ];
+let messages = [
+  { Name: message.name, Message: message.content},
+];
 
-// function generateTableHead(table) {
-//   let thead = table.createTHead();
-//   let row = thead.insertRow();
-//   for (let key of data) {
-//     let th = document.createElement("th");
-//     let text = document.createTextNode(key);
-//     th.appendChild(text);
-//     row.appendChild(th);
-//   }
-// }
-
-
-
-// function generateTable(table, data) {
-//   for (let element of data) {
-//     let row = table.insertRow();
-//     for (key in element) {
-//       let cell = row.insertCell();
-//       let text = document.createTextNode(element[key]);
-//       cell.appendChild(text);
-//     }
-//   }
-// }
-
-// let table = document.getElementById("table");
-// let data = Object.keys(messages[0]);
-// generateTableHead(table, data);
-// generateTable(table, messages);
+function generateTableHead(table) {
+  let thead = table.createTHead();
+  let row = thead.insertRow();
+  for (let key of data) {
+    let th = document.createElement("th");
+    let text = document.createTextNode(key);
+    th.appendChild(text);
+    row.appendChild(th);
+  }
+}
 
 
 
-var m = document.getElementById("Messages");
-// m.innerHTML = message.content;
-var p = document.createElement("p");
-p.innerHTML = message.name+ " says: " + message.content;
-m.prepend(p);
+function generateTable(table, data) {
+  for (let element of data) {
+    let row = table.insertRow();
+    for (key in element) {
+      let cell = row.insertCell();
+      let text = document.createTextNode(element[key]);
+      cell.appendChild(text);
+    }
+  }
+}
+
+let table = document.getElementById("table");
+let data = Object.keys(messages[0]);
+generateTableHead(table, data);
+generateTable(table, messages);
+
+
+
+// var m = document.getElementById("Messages");
+// // m.innerHTML = message.content;
+// var p = document.createElement("p");
+// p.innerHTML = message.name+ " says: " + message.content;
+// m.prepend(p);
 }
 
 //The sendMessage('text') function will send a message from you to the database.

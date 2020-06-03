@@ -16,16 +16,9 @@ body{
 	text-align: center;
 }
 
-#Messages{
-	text-align: left;
-	font-family: "Comic Sans MS", cursive, sans-serif
-}
 
-table, th, td{
-	border: 1px solid black;
-	border-collapse: collapse;
-  	width: 50%;
-}
+
+
 
 #sendMessage{
 	background-color: Pink;
@@ -34,11 +27,37 @@ table, th, td{
 	color: black;
 	border:2px solid Azure;
 	border-radius: 20px;
+	text-align: center;
 }
 
 #logo{
 	font-family:"Times New Roman", Times, serif;  
  	color: SlateGray;
  	font-style: italic;
-
+ 	text-align: center;
 }
+
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#table tr:nth-child(even){background-color: #5F9EA0;}
+
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #708090;
+  color: white;
+}
+
+#table tr:hover {background-color: LightBlue;}
